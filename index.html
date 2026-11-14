@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yash Kumbar | Computer Science and Product</title>
+<meta name="description" content="Yash Kumbar: computer science undergraduate who builds user-facing products end to end. Aspiring Associate Product Manager.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Manrope:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#0f2b23;--panel:rgba(255,255,255,.055);--line:rgba(255,255,255,.14);--text:#eef4ef;--muted:#9fb7ab;--gold:#f2c14e;--mint:#8ee6b9;
+--grad:linear-gradient(110deg,var(--gold),var(--mint));--head:"Archivo","Segoe UI",Helvetica,Arial,sans-serif;--body:"Manrope",-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 74px)}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:40}
+.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60vw 50vw at 85% -10%,rgba(142,230,185,.16),transparent 60%),radial-gradient(50vw 45vw at -10% 40%,rgba(242,193,78,.09),transparent 60%),linear-gradient(180deg,#123329,#0e2820 60%,#0f2b23)}
+#bar{position:fixed;left:0;top:env(safe-area-inset-top,0px);height:3px;width:100%;background:var(--grad);transform-origin:0 50%;transform:scaleX(0);z-index:50}
+a{color:inherit}.w{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(15,43,35,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1rem var(--head);letter-spacing:.02em}
+.logo i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--grad);color:#0f2b23;font-style:normal;font-size:.85rem}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav ul a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:600;font-size:.88rem;transition:.2s}
+nav ul a:hover,nav ul a.on{color:var(--text);background:rgba(255,255,255,.08)}
+@media(max-width:820px){nav ul{display:none}}
+.hero{position:relative;padding:92px 0 56px}
+.pitch{position:absolute;right:-60px;top:20px;width:min(560px,70vw);opacity:.55;z-index:-1}
+.pitch *{fill:none;stroke:var(--line);stroke-width:2}
+.pitch path,.pitch circle,.pitch rect{stroke-dasharray:1;stroke-dashoffset:1;animation:dr 2.4s ease forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.kick{color:var(--gold);font:600 .92rem var(--body);margin:0 0 16px}
+.name{font:800 clamp(3.2rem,13vw,8.6rem)/.92 var(--head);letter-spacing:-.04em;margin:0;text-transform:uppercase}
+.name span{display:block;overflow:hidden}
+.name b{display:block;font-weight:800;animation:up 1s cubic-bezier(.2,.9,.25,1) both}
+.name span:nth-child(2) b{animation-delay:.12s;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.sub{font:600 clamp(1.1rem,2.6vw,1.5rem)/1.4 var(--head);margin:26px 0 12px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:620px;margin:0 0 28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:12px;font-weight:700;font-size:.93rem;text-decoration:none;margin:0 10px 10px 0;border:1px solid var(--line);background:var(--panel);transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-3px);border-color:var(--gold)}
+.btn.p{background:var(--grad);border:0;color:#0f2b23}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:46px}
+.stat{padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.stat b{font:800 2.3rem var(--head);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;color:var(--muted);font-size:.88rem}
+section{padding:66px 0}
+.lab{display:flex;align-items:center;gap:14px;margin:0 0 10px;font:700 .8rem var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.lab::after{content:"";flex:1;height:1px;background:var(--line)}
+h2{font:800 clamp(1.8rem,4.5vw,2.7rem)/1.1 var(--head);letter-spacing:-.025em;margin:0 0 28px}
+.grid{display:grid;gap:18px}
+.card{position:relative;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden;transition:border-color .3s,transform .3s}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),rgba(242,193,78,.13),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{border-color:rgba(242,193,78,.5);transform:translateY(-4px)}.card:hover::before{opacity:1}
+.top{display:flex;justify-content:space-between;gap:6px 14px;flex-wrap:wrap;align-items:baseline}
+.card h3{font:800 1.45rem var(--head);letter-spacing:-.015em;margin:0}.tag{color:var(--muted);font-size:.85rem;font-weight:600}
+.sum{color:var(--muted);margin:10px 0 18px}
+.flow{display:flex;align-items:center;gap:0;margin:6px 0 22px;flex-wrap:wrap}
+.flow .n{display:flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.04);font-weight:700;font-size:.9rem}
+.flow .n em{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--grad);color:#0f2b23;font:800 .75rem var(--head);font-style:normal}
+.flow .ar{width:34px;height:2px;background:var(--line);position:relative;overflow:hidden}
+.flow .ar::after{content:"";position:absolute;inset:0;background:var(--grad);transform:translateX(-100%);transition:transform .8s ease .5s}
+.in .flow .ar::after{transform:none}
+@media(max-width:620px){.flow{flex-direction:column;align-items:flex-start}.flow .ar{width:2px;height:20px;margin-left:24px}.flow .ar::after{transform:translateY(-100%)}.in .flow .ar::after{transform:none}}
+ul.pts{margin:0;padding-left:20px}ul.pts li{margin:0 0 8px}ul.pts li::marker{color:var(--gold)}
+.pages{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.pages span{border:1px solid var(--line);border-radius:10px;padding:4px 12px;font-size:.84rem;font-weight:600;background:rgba(255,255,255,.04)}
+.pages span::before{content:attr(data-n);color:var(--gold);margin-right:8px;font-family:var(--head);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.chips span{border:1px solid var(--line);border-radius:999px;padding:4px 13px;font-size:.8rem;color:var(--muted);font-weight:600}
+.two{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.cap{display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:center}
+@media(max-width:760px){.cap{grid-template-columns:1fr}}
+.cap .stats{margin:0;grid-template-columns:1fr 1fr}
+.sk{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.sk>div{padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+.sk h4{margin:0;font:800 1rem var(--head);letter-spacing:.02em}
+.certs{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.certs li{padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:var(--panel);display:flex;gap:12px;align-items:center}
+.certs li::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mint);flex:none}
+.edu{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.cta{text-align:center;padding:64px 22px;border:1px solid var(--line);border-radius:28px;background:var(--panel);position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 0deg,rgba(242,193,78,.3),rgba(142,230,185,.3),rgba(242,193,78,.3));filter:blur(80px);opacity:.5;z-index:-1;animation:rot 16s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.cta h2{margin-bottom:12px}.cta p{color:var(--muted);margin:0 auto 24px;max-width:520px}
+footer{padding:26px 0 52px;text-align:center;color:var(--muted);font-size:.85rem}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;transition-delay:calc(var(--d,0)*90ms)}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.name b,.pitch *,.cta::before{animation:none}.pitch *{stroke-dashoffset:0}.flow .ar::after{transition:none}}
+.demo{border:1px dashed var(--line);border-radius:14px;padding:16px;margin:0 0 20px;background:rgba(255,255,255,.03)}
+.dl{font:800 .78rem var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 12px}
+.drow{display:flex;flex-wrap:wrap;gap:10px;align-items:end}.drow label{display:grid;gap:4px;font-size:.78rem;color:var(--muted);font-weight:600}
+select{padding:9px 12px;border-radius:10px;border:1px solid var(--line);background:#12332a;color:var(--text);font:inherit;font-size:.9rem}
+.act{padding:10px 16px;border-radius:10px;border:0;background:var(--grad);color:#0f2b23;font:800 .88rem var(--body);cursor:pointer;transition:transform .2s}.act:hover{transform:translateY(-2px)}
+.act.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
+.prog{height:10px;border-radius:8px;background:rgba(255,255,255,.1);margin:16px 0 8px;overflow:hidden}.prog div{height:100%;width:0;background:var(--grad);transition:width .5s}
+#pt{margin:0;color:var(--muted);font-size:.9rem}
+#wl{list-style:none;display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0;padding:0}#wl li{border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.8rem;animation:pop .3s}
+@keyframes pop{from{transform:scale(.7);opacity:0}}
+.flow .n{transition:border-color .3s,background .3s}.flow .n.on{border-color:var(--gold);background:rgba(242,193,78,.1)}
+.pages button{border:1px solid var(--line);border-radius:10px;padding:5px 13px;font:600 .84rem var(--body);background:rgba(255,255,255,.04);color:var(--text);cursor:pointer;transition:.2s}
+.pages button::before{content:attr(data-n);color:var(--gold);margin-right:8px;font-family:var(--head);font-weight:800}
+.pages button:hover,.pages button.on{border-color:var(--gold);background:rgba(242,193,78,.12)}
+.ptxt{color:var(--muted);margin:0 0 16px;min-height:1.7em}
+.gw{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 0}
+.st{padding:8px 14px;border:1px solid var(--line);border-radius:10px;font-size:.85rem;font-weight:700;transition:.3s}
+.st.ok{border-color:var(--mint);background:rgba(142,230,185,.14);color:var(--mint)}.st.bad{border-color:#ff7b72;background:rgba(255,123,114,.14);color:#ff9a93}
+.gar{width:16px;height:2px;background:var(--line)}
+.gout{font:500 .85rem ui-monospace,Menlo,Consolas,monospace;color:var(--muted);min-height:1.6em;margin:12px 0 0}
+.board{grid-column:1/-1}
+#tb{width:100%;max-width:560px;display:block;margin:14px auto 0;border:1px solid var(--line);border-radius:14px;background:rgba(0,0,0,.18)}
+#tb .ln{fill:none;stroke:var(--line);stroke-width:1.5}#tb .pl{fill:var(--gold);transition:transform .7s cubic-bezier(.3,.9,.3,1)}#tb .pl.gk{fill:var(--mint)}
+.fm,.fbar{display:flex;flex-wrap:wrap;gap:8px}.fbar{margin:-8px 0 22px}
+.fm button,.fb{padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:700 .85rem var(--body);cursor:pointer;transition:.2s}
+.fm button:hover,.fb:hover{border-color:var(--gold)}.fm button.on,.fb.on{background:var(--grad);border:0;color:#0f2b23}
+#fdesc{color:var(--muted);font-size:.9rem;margin:10px 0 0;text-align:center}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--gold);color:#0f2b23;padding:10px 20px;border-radius:999px;font-weight:800;opacity:0;transition:.3s;z-index:60;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+</style>
+</head>
+<body>
+<div id="bar"></div><div class="bg"></div>
+<nav><div class="w"><a class="logo" href="#top"><i>YK</i>Yash Kumbar</a>
+<ul><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#leadership">Leadership</a></li><li><a href="#skills">Skills</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main class="w" id="top">
+<div class="hero">
+<svg class="pitch" viewBox="0 0 400 260" aria-hidden="true"><rect pathLength="1" x="6" y="6" width="388" height="248" rx="6"/><path pathLength="1" d="M200 6V254"/><circle pathLength="1" cx="200" cy="130" r="42"/><path pathLength="1" d="M6 70H62V190H6"/><path pathLength="1" d="M394 70H338V190H394"/></svg>
+<h1 class="name" aria-label="Yash Kumbar"><span><b>Yash</b></span><span><b>Kumbar</b></span></h1>
+<p class="sub">I build user-facing products end to end, and I lead teams the way I captain a football side.</p>
+<p class="lead">Computer science undergraduate who goes from defining the problem and the core user flow to shipping a working full-stack app. Looking for an Associate Product Manager role where technical depth, user focus and team leadership come together.</p>
+<a class="btn p" href="#projects">See my projects</a><a class="btn" href="https://www.linkedin.com/in/yash-kumbar-982b0a37b5" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/yashkumbar" target="_blank" rel="noopener">GitHub</a><a class="btn" href="mailto:yashkumbar051@gmail.com">Email</a>
+<div class="stats">
+<div class="stat"><b data-to="100000">100,000</b><span>ride bookings analysed in SQL</span></div>
+<div class="stat"><b data-to="5">5</b><span>page Power BI dashboard</span></div>
+<div class="stat"><b data-to="4">4</b><span>inter-college tournaments as captain</span></div>
+<div class="stat"><b data-to="2">2</b><span>semi-final finishes</span></div>
+</div>
+</div>
+
+<section id="about" class="rv">
+<p class="lab">About</p><h2>Technical depth, with the user in mind.</h2>
+<p class="lead" style="max-width:760px">I’ve built web apps with React, Node.js and PostgreSQL, analysed real datasets with SQL and Power BI, and designed a secure backend gateway in Python. Alongside the code, I’ve spent years leading a college football team, which taught me to coordinate people, make calls under pressure and keep everyone aimed at one goal. That mix is what I want to bring to product management.</p>
+</section>
+
+<section id="projects">
+<p class="lab rv">Projects</p><h2 class="rv">Three things I’ve built.</h2>
+<div class="grid">
+
+<article class="card rv"><div class="top"><h3>FitTrackr</h3><span class="tag">Fitness goal tracking platform · 2025</span></div>
+<p class="sum">A platform where users set fitness goals, log workouts and track daily progress in one place.</p>
+<div class="flow"><div class="n on" id="fs1"><em>1</em>Set a goal</div><div class="ar"></div><div class="n" id="fs2"><em>2</em>Log a workout</div><div class="ar"></div><div class="n" id="fs3"><em>3</em>View progress</div></div>
+<div class="demo"><p class="dl">Try it: a mini FitTrackr</p><div class="drow">
+<label>Weekly goal<select id="g"><option value="3">3 workouts</option><option value="4">4 workouts</option><option value="5">5 workouts</option></select></label>
+<label>Workout<select id="wt"><option>Run</option><option>Gym</option><option>Football</option><option>Yoga</option><option>Cycling</option></select></label>
+<button class="act" id="lw" type="button">Log workout</button><button class="act ghost" id="rs" type="button">Reset</button></div>
+<div class="prog"><div id="pf"></div></div><p id="pt" aria-live="polite"></p><ul id="wl"></ul></div>
+<ul class="pts"><li>Defined the core user flow and scoped the first release around it.</li><li>Designed a responsive React and Tailwind CSS interface, and built REST APIs with Node.js and Express.js.</li><li>Stored user data securely in PostgreSQL using a modular architecture that keeps new features easy to add.</li></ul>
+<div class="chips"><span>React.js</span><span>Node.js</span><span>Express.js</span><span>PostgreSQL</span><span>Supabase</span><span>Tailwind CSS</span></div></article>
+
+<article class="card rv"><div class="top"><h3>OLA Ride Bookings Analytics</h3><span class="tag">SQL analysis and Power BI dashboard</span></div>
+<p class="sum">An analysis of a 100,000-row Bengaluru ride bookings dataset, turned into an interactive dashboard.</p>
+<div class="pages" role="group" aria-label="Dashboard pages"><button type="button" class="on" data-n="1">Overall</button><button type="button" data-n="2">Vehicle Type</button><button type="button" data-n="3">Revenue</button><button type="button" data-n="4">Cancellation</button><button type="button" data-n="5">Ratings</button></div><p class="ptxt" id="ptxt" aria-live="polite"></p>
+<ul class="pts"><li>Cleaned the data with SQL, handled missing values and prepared ride-level attributes to surface operational trends.</li><li>Analysed ride volume, booking status, vehicle types, payment methods and cancellations to find the key drivers of customer and operational behaviour.</li><li>Designed the five-page Power BI dashboard to communicate the insights, and documented the work in a full GitHub README.</li></ul>
+<div class="chips"><span>Python</span><span>MySQL</span><span>Power BI</span></div></article>
+
+<article class="card rv"><div class="top"><h3>Secure API Gateway with Zero Trust Attack Detection</h3><span class="tag">Backend security project</span></div>
+<p class="sum">A modular backend gateway that sits in front of protected services and handles security and request processing in one place.</p>
+<div class="demo"><p class="dl">Try it: send a simulated request</p><div class="drow" id="rq">
+<button class="act ghost" type="button" data-r="normal">Normal request</button><button class="act ghost" type="button" data-r="notoken">No token</button><button class="act ghost" type="button" data-r="burst">Burst of requests</button><button class="act ghost" type="button" data-r="sqli">SQL injection</button><button class="act ghost" type="button" data-r="xss">XSS attempt</button></div>
+<div class="gw" id="gw"><span class="st">Auth</span><i class="gar"></i><span class="st">Rate limit</span><i class="gar"></i><span class="st">WAF check</span><i class="gar"></i><span class="st">Risk score</span><i class="gar"></i><span class="st">Service</span></div>
+<p class="gout" id="gout" aria-live="polite">Pick a request to see how the gateway handles it. This is a simulation.</p></div>
+<ul class="pts"><li>Built REST APIs, authentication, authorisation, reverse proxying and centralised request processing.</li><li>Implemented Redis-based rate limiting, WAF-style SQL injection and XSS detection, adaptive risk scoring and audit logging to improve security, reliability and resilience.</li><li>Applied asynchronous request handling, automated testing, Docker-based deployment and observability practices to keep the services clean and production-oriented.</li></ul>
+<div class="chips"><span>Python</span><span>FastAPI</span><span>Redis</span><span>JWT</span><span>OAuth 2.0</span><span>Docker</span></div></article>
+</div>
+</section>
+
+<section id="leadership">
+<p class="lab rv">Leadership</p><h2 class="rv">Captain, College Football Team.</h2>
+<div class="card rv cap"><div>
+<ul class="pts"><li>Led the team across 4 inter-college tournaments and reached the semi-finals in 2 of them.</li><li>Coordinated players, made strategy calls under pressure and kept the squad aligned toward a common goal.</li><li>Represented the college at the VTU inter-college football tournament.</li></ul></div>
+<div class="stats"><div class="stat"><b data-to="4">4</b><span>tournaments led</span></div><div class="stat"><b data-to="2">2</b><span>semi-finals reached</span></div></div>
+<div class="board"><p class="dl">Try it: pick the formation</p><div class="fm" id="fm"><button type="button" class="on" data-f="442">4-4-2</button><button type="button" data-f="433">4-3-3</button><button type="button" data-f="352">3-5-2</button></div>
+<svg id="tb" viewBox="0 0 300 190" role="img" aria-label="Football tactics board"><rect class="ln" x="4" y="4" width="292" height="182" rx="4"/><path class="ln" d="M150 4V186"/><circle class="ln" cx="150" cy="95" r="24"/><rect class="ln" x="4" y="55" width="40" height="80"/><rect class="ln" x="256" y="55" width="40" height="80"/></svg>
+<p id="fdesc" aria-live="polite"></p></div></div>
+</section>
+
+<section id="skills">
+<p class="lab rv">Skills</p><h2 class="rv">What I work with.</h2>
+<div class="fbar" id="fbar"><button class="fb on" type="button" data-f="all">All</button><button class="fb" type="button" data-f="prog">Programming</button><button class="fb" type="button" data-f="web">Web</button><button class="fb" type="button" data-f="ai">AI and ML</button><button class="fb" type="button" data-f="data">Data</button><button class="fb" type="button" data-f="tools">Tools</button><button class="fb" type="button" data-f="prod">Product</button><button class="fb" type="button" data-f="core">Core CS</button></div>
+<div class="sk">
+<div class="rv" data-c="prog"><h4>Programming</h4><div class="chips"><span>Python</span><span>C/C++</span><span>Java</span><span>SQL</span><span>Bash</span></div></div>
+<div class="rv" data-c="web"><h4>Web</h4><div class="chips"><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>React.js</span><span>Node.js</span><span>Express.js</span></div></div>
+<div class="rv" data-c="ai"><h4>AI and ML</h4><div class="chips"><span>Machine Learning</span><span>Deep Learning</span><span>Neural Networks</span><span>CNN</span><span>Multimodal AI</span><span>Scikit-learn</span><span>PyTorch</span><span>TensorFlow</span><span>Feature engineering</span><span>Model evaluation</span></div></div>
+<div class="rv" data-c="data"><h4>Data and analytics</h4><div class="chips"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>Tableau</span><span>Excel</span><span>EDA</span><span>Statistical analysis</span></div></div>
+<div class="rv" data-c="tools"><h4>Databases and tools</h4><div class="chips"><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span><span>Postman</span></div></div>
+<div class="rv" data-c="prod"><h4>Product and workflow</h4><div class="chips"><span>Agile/Scrum</span><span>User research</span><span>PRDs</span><span>Prioritisation</span><span>Roadmapping</span><span>Metrics definition</span><span>Git</span><span>Jupyter Notebook</span><span>Linux</span><span>VS Code</span></div></div>
+<div class="rv" data-c="core"><h4>Core CS</h4><div class="chips"><span>Data Structures and Algorithms</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Computer Networks</span></div></div>
+</div>
+</section>
+
+<section id="certs">
+<p class="lab rv">Certifications and education</p><h2 class="rv">Always learning.</h2>
+<ul class="certs rv">
+<li>Deloitte Australia: Cyber Security Job Simulation (Forage)</li>
+<li>Deloitte Australia: Data Analytics Job Simulation (Forage)</li>
+<li>Tata Group: Data Visualization (Forage)</li>
+<li>NPTEL: Python for Data Science</li>
+<li>Scaler: Operating Systems Fundamentals</li>
+</ul>
+<div class="card rv" style="margin-top:18px"><div class="edu"><h3>Bachelor of Engineering, Computer Science and Engineering</h3><span class="tag">2023 – 2027</span></div>
+<p class="sum" style="margin:8px 0 0">Jain College of Engineering, Belagavi. Languages: English, Hindi, Kannada, Marathi.</p></div>
+</section>
+
+<section id="contact">
+<div class="cta rv"><p class="lab" style="justify-content:center">Contact</p><h2>Let’s build something people use.</h2>
+<p>I’m looking for an Associate Product Manager role. Reach out, I’d love to talk.</p>
+<a class="btn p" href="mailto:yashkumbar051@gmail.com">yashkumbar051@gmail.com</a><button class="btn" id="cp" type="button">Copy email</button><a class="btn" href="https://www.linkedin.com/in/yash-kumbar-982b0a37b5" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="https://github.com/yashkumbar" target="_blank" rel="noopener">GitHub</a></div>
+</section>
+<footer>© Yash Kumbar · Belagavi, Karnataka, India</footer>
+</main>
+<div class="toast" id="toast" role="status">Email copied</div>
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var bar=document.getElementById('bar');
+function sp(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.transform='scaleX('+(h>0?scrollY/h:0)+')'}addEventListener('scroll',sp,{passive:true});sp();
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var b=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-b.left)+'px');c.style.setProperty('--my',(e.clientY-b.top)+'px')})});
+document.querySelectorAll('.grid,.sk').forEach(function(g){g.querySelectorAll('.rv').forEach(function(e,k){e.style.setProperty('--d',k%3)})});
+function count(el){var to=+el.dataset.to,t0=null;if(rm)return;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1400,1),e=1-Math.pow(1-p,3);el.textContent=Math.round(to*e).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')})}else{
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)});
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);so.unobserve(e.target)}})},{threshold:.6});document.querySelectorAll('.stat b').forEach(function(b){so.observe(b)});
+var links=document.querySelectorAll('nav ul a'),no=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(function(s){no.observe(s)})}
+var $=function(s){return document.querySelector(s)},$$=function(s){return document.querySelectorAll(s)};
+var wk=[],gset=false;
+function fit(){var g=+$('#g').value,n=wk.length;$('#pf').style.width=Math.min(n/g*100,100)+'%';
+$('#pt').textContent=n===0?'Goal set: '+g+' workouts this week. Log your first one.':(n>=g?'Goal reached! '+n+' of '+g+' workouts done.':n+' of '+g+' workouts done. '+(g-n)+' to go.');
+var ul=$('#wl');ul.textContent='';wk.forEach(function(w){var li=document.createElement('li');li.textContent=w;ul.appendChild(li)});
+$('#fs1').classList.add('on');$('#fs2').classList.toggle('on',gset||n>0);$('#fs3').classList.toggle('on',n>0)}
+$('#g').onchange=function(){gset=true;fit()};
+$('#lw').onclick=function(){if(wk.length<14)wk.push($('#wt').value);fit()};
+$('#rs').onclick=function(){wk=[];gset=false;fit()};fit();
+var pg={1:'Ride volume and booking status across the whole dataset.',2:'How rides differ across vehicle types.',3:'Revenue and payment methods.',4:'Cancellations and what drives them.',5:'How rides are rated.'};
+$$('.pages button').forEach(function(b){b.onclick=function(){$$('.pages button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');$('#ptxt').textContent=pg[b.dataset.n]}});$('#ptxt').textContent=pg[1];
+var st=$$('#gw .st'),tm=[],R={normal:[-1,'Allowed: the request passes every check and reaches the protected service.'],notoken:[0,'Rejected: no valid JWT or OAuth 2.0 token.'],burst:[1,'Blocked: too many requests, Redis rate limit reached.'],sqli:[2,'Blocked: SQL injection pattern detected.'],xss:[2,'Blocked: XSS pattern detected.']};
+$$('#rq button').forEach(function(b){b.onclick=function(){tm.forEach(clearTimeout);tm=[];st.forEach(function(s){s.className='st'});$('#gout').textContent='Processing...';
+var r=R[b.dataset.r],stop=r[0]<0?4:r[0];for(var i=0;i<=stop;i++)(function(i){tm.push(setTimeout(function(){st[i].className='st '+(i===stop&&r[0]>=0?'bad':'ok');
+if(i===stop)$('#gout').textContent='[audit] '+r[1]},rm?0:i*420))})(i)}});
+var F={'442':[[20,95],[75,35],[75,75],[75,115],[75,155],[150,35],[150,75],[150,115],[150,155],[235,70],[235,120]],'433':[[20,95],[75,35],[75,75],[75,115],[75,155],[150,55],[150,95],[150,135],[235,40],[235,95],[235,150]],'352':[[20,95],[75,50],[75,95],[75,140],[150,25],[150,60],[150,95],[150,130],[150,165],[235,70],[235,120]]};
+var FD={'442':'4-4-2: a balanced shape with two strikers up front.','433':'4-3-3: a wide attack with an extra forward.','352':'3-5-2: midfield control with wing-backs pushing up.'};
+var tb=$('#tb'),pl=[];for(var k=0;k<11;k++){var c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('r','9');c.setAttribute('class','pl'+(k===0?' gk':''));tb.appendChild(c);pl.push(c)}
+function form(f){F[f].forEach(function(p,k){pl[k].style.transform='translate('+p[0]+'px,'+p[1]+'px)'});$('#fdesc').textContent=FD[f];$$('#fm button').forEach(function(b){b.classList.toggle('on',b.dataset.f===f)})}
+$$('#fm button').forEach(function(b){b.onclick=function(){form(b.dataset.f)}});form('442');
+$$('#fbar button').forEach(function(b){b.onclick=function(){var f=b.dataset.f;$$('#fbar button').forEach(function(x){x.classList.toggle('on',x===b)});$$('.sk>div').forEach(function(d){d.style.display=(f==='all'||d.dataset.c===f)?'':'none'})}});
+$('#cp').onclick=function(){var t=$('#toast'),m='yashkumbar051@gmail.com';function ok(){t.classList.add('show');setTimeout(function(){t.classList.remove('show')},1800)}
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(m).then(ok,function(){location.href='mailto:'+m})}else{location.href='mailto:'+m}};
+})();
+</script>
+</body>
+</html>
